@@ -1,0 +1,256 @@
+
+html, body{
+    height:100%;
+    margin: 0;
+    font-family: 'Courier New', Arial, monospace;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h1 {
+    margin:0;
+    font-size: 230%;
+    font-weight: 600;
+}
+
+.menu {
+    padding: 100px 20px 20px 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    width: 60%;
+    height: 76%;
+    z-index: 1;
+}
+
+.nav {
+    padding: 20px 0px 0px 0px;
+}
+
+.nav ul {
+    overflow: hidden;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+p {
+    margin: 20px;
+}
+
+.nav li button{
+    transition: all 0.3s ease;
+    color: white;
+    font-family: 'Courier New', Arial, monospace;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    padding: 30px 25px;
+    margin: 10px;
+    background: black;
+    cursor: pointer;
+    width: 400px;
+    border: transparent solid 1.2px;
+}
+
+.nav li button:hover{
+    background: white;
+    color: black;
+    border: 1.2px solid black;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer{
+    padding: 10px 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    width: 60%;
+    height:auto;
+}
+
+
+.anime-background{
+    margin: 0;
+    width:100%;
+}
+
+.circles {
+    margin: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    width:96.8%;
+    height:100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: black;
+    animation: animate 20s linear infinite;
+    bottom: -200px;
+    border-radius: 50%;
+}
+
+.circles li:nth-child(1){
+    left: 80%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.4s;
+}
+
+.circles li:nth-child(2){
+    left: 30%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0.3s;
+    animation-duration: 20s;
+}
+
+.circles li:nth-child(3){
+    left: 80%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0s;
+    animation-duration: 40s;
+}
+
+.circles li:nth-child(4){
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    animation-delay: 0.9s;
+    animation-duration: 16s;
+}
+
+.circles li:nth-child(5){
+    left: 20%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 2s;
+    animation-duration: 3s;
+}
+
+.circles li:nth-child(6){
+    left: 70%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+
+.circles li:nth-child(7){
+    left: 30%;
+    width: 7px;
+    height: 7px;
+    animation-delay: 2.5s;
+    animation-duration: 5s;
+}
+
+.circles li:nth-child(8){
+    left: 20%;
+    width: 130px;
+    height: 130px;
+    animation-delay: 0.3s;
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(9){
+    left: 10%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 1.4s;
+    animation-duration: 8s;
+}
+
+.circles li:nth-child(10){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 4s;
+    animation-duration: 30s;
+}
+
+.circles li:nth-child(11){
+    left: 55%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 0.6s;
+    animation-duration: 4s;
+}
+
+.circles li:nth-child(12){
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2.3s;
+    animation-duration: 20s;
+}
+
+.circles li:nth-child(13){
+    left: 80%;
+    width: 8px;
+    height: 8px;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+
+.circles li:nth-child(14){
+    left: 2%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1s;
+    animation-duration: 9s;
+}
+
+.circles li:nth-child(15){
+    left: 7%;
+    width: 8px;
+    height: 8px;
+    animation-delay: 2.8s;
+    animation-duration: 4s;
+}
+
+.circles li:nth-child(16){
+    left: 17%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2.3s;
+    animation-duration: 20s;
+}
+
+.circles li:nth-child(17){
+    left: 97%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0.2s;
+    animation-duration: 6s;
+}
+
+.circles li:nth-child(18){
+    left:95%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0.5s;
+    animation-duration: 18s;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0) scale(0);
+    }
+    100%{
+        transform: translateY(-800px) scale(2);
+        opacity: 0;
+    }
+}

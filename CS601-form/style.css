@@ -1,0 +1,64 @@
+html, body {
+    height: 90%;
+    margin: 0;
+    font-family: 'Courier New', Arial, monospace;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.display-nyancat {
+    margin: 0;
+    position: fixed;
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("media/nyancat.gif");
+    background-size: 100%;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.hide-nyancat {
+    display: none;
+}
+
+main {
+    background-color: white;
+    border: black solid 1px;
+    padding: 10px;
+    margin: 6% 25% 6% 25%;
+    width: 50%;
+    height: auto;
+    z-index: 1;
+}
+
+form {
+    padding: 10px 50px 20px 50px;
+    text-align: left;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.submit-section{
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.error {
+    border:2px solid red;
+    border-radius: 2px;
+}
+
+.hidden {
+    font-weight: 600;
+    color: red;
+    position:relative;
+    float:right;
+    margin:0;
+    visibility: hidden;
+}

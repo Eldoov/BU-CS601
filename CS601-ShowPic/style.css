@@ -1,0 +1,18 @@
+html, body {
+    height: 90%;
+    margin: 0;
+    font-family: 'Courier New', Arial, monospace;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    border: black solid 1px;
+    padding: 10px;
+    margin: 6% 25% 6% 25%;
+    width: 50%;
+    height: auto;
+    z-index: 1;
+}

@@ -1,0 +1,22 @@
+html, body{
+    height: 90%;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    padding: 10px;
+    margin: 6% 25% 6% 25%;
+    width:50%;
+    height: auto;
+}
+
+button {
+    font-size: 30px;
+    padding: 40px 80px;
+    background-color: #4CAF50;
+    text-decoration: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

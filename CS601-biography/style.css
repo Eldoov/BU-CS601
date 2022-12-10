@@ -1,0 +1,344 @@
+/*
+
+by Zuowen Tang
+
+*/
+/* common usage */
+body {
+    margin: 0;
+    font-family: 'Courier New', Arial, monospace;
+    font-size: 16px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+img.bg {
+    width: 1280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+img.my-pic {
+    width: 11em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contact a {
+    text-align: center;
+    display: block;
+    background: black;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact a:hover {
+    background: #524d4d;
+}
+
+/* header */
+
+header {
+    display: table;
+    width: 1280px;
+}
+
+
+.head-left {
+    display: table-cell;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 440px;
+}
+
+.head-right {
+    display: table-cell;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 640px;
+    background: rgba(0,0,0,0.5);
+}
+
+.nav-menu {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
+
+.nav-menu li{
+    float: left;
+}
+
+
+.nav-menu a{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-menu a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Main */
+
+main {
+    display: block;
+    width: 1280px;
+}
+
+.main-container {
+    display: flex;
+    color: white;
+    width: 1280px;
+}
+
+.main-left {
+    width: 440px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.main-right {
+    height: 64.4vh;
+    overflow: auto;
+    width: 640px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background: rgba(0,0,0,0.5);
+}
+
+/* blog on main page */
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.post-grid {
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.post-grid h3 {
+    text-decoration: underline;
+}
+
+.post-grid p {
+    height: 45%;
+}
+
+.post-grid a {
+    background: black;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.post-grid a:hover {
+    background: dimgrey;
+    color: white;
+}
+
+.post-img {
+    text-align: center;
+}
+
+.post-img img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.other-post li {
+    overflow: hidden;
+    list-style-type: none;
+    float: left;
+}
+
+.other-post a{
+    background: black;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 10px 20px 20px 10px;
+    padding: 10px 30px 10px 30px;
+}
+
+.other-post a:hover{
+    background: #524d4d;
+}
+
+/* Footer */
+
+footer {
+    display: table;
+    width: 1280px;
+}
+
+.footer-left {
+    display: table-cell;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 440px;
+}
+
+.footer-right {
+    width: 640px;
+    display: table-cell;
+    color: lightgray;
+    background: rgba(0,0,0,0.5);
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: right;
+}
+
+/* media queries */
+
+@media (max-width:640px)  {
+
+    img.bg {
+        height: 1134px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+
+    header {
+        display: block;
+        width: 640px;
+    }
+
+
+    .head-left {
+        display: block;
+        padding-right: 30px;
+        padding-left: 30px;
+        width: 640px;
+    }
+
+    .head-right {
+        display: block;
+        padding-right: 0;
+        padding-left: 0;
+        width: 640px;
+        background: rgba(0,0,0,0.5);
+    }
+
+    ul.nav-menu {
+        padding-left: 0;
+        float: none;
+    }
+
+    .nav-menu li{
+        float: none;
+    }
+
+    .nav-menu a{
+        color: white;
+        text-align: center;
+    }
+
+    .nav-menu a:hover{
+        background-color: black;
+        color: white;
+    }
+
+    main {
+        display: block;
+        width: 640px;
+    }
+
+    .main-container {
+        display: block;
+        color: white;
+        padding: 0;
+        width: 640px;
+        height: 100%;
+    }
+
+    .main-left {
+        display: block;
+        width: 0;
+    }
+
+    .main-right {
+        display: block;
+        height: 100%;
+        width: 540px;
+        padding: 20px 50px 50px;
+        background: rgba(0,0,0,0.5);
+    }
+
+
+    footer {
+        display: block;
+        width: 640px;
+    }
+
+    .footer-left {
+        display: block;
+        width: 0;
+    }
+
+    .footer-right {
+        width: 640px;
+        display: block;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 0;
+    }
+
+    footer p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .other-post li {
+        float: none;
+    }
+
+    .other-post {
+        padding-left: 0;
+    }
+
+    .other-post a{
+        background: black;
+        color: white;
+        display: block;
+        text-align: center;
+        margin: 10px 0 0 0;
+        padding: 10px 30px 10px 30px;
+    }
+
+    .other-post a:hover{
+        background: #524d4d;
+    }
+
+
+}
+
+

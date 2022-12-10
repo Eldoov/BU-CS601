@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Project Form</title>
+</head>
+<body>
+<div class="display-nyancat" id="display-nyancat"></div>
+<main>
+    <h1>Welcome to Project Form</h1>
+    <form name="myForm" onsubmit="return checkAll()" action=https://cs601.bu-course-examples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5 method="post">
+        <section class="name-form">
+            <div class="hidden" id="hidden-first">Invalid input!</div>
+            <p class="title"><label for="firstName">First name:</label>
+                <input type="text" id="firstName" onblur="return checkFirst()" name="firstName" minlength="2" placeholder="Zuowen" required>
+            <div class="hidden" id="hidden-last">Invalid input!</div>
+            <p class="title"><label for="lastName">Last name:</label>
+                <input type="text" id="lastName" onblur="return checkLast()" name="lastName" minlength="2" placeholder="Tang" required>
+            <div class="hidden" id="hidden-faci">Invalid input!</div>
+            <p class="title"><label for="facilitator">Facilitator name:</label>
+                <input type="text" id="facilitator" onblur="return checkFacilitator()" name="facilitator" placeholder="Jen" required>
+            </p>
+        </section>
+        <section class="animal-form">
+        <p class="title">What's your favorite animal?</p>
+            <p>
+                <input type="radio" id="dog" name="animal">
+                <label for="dog">Dog</label>
+                <input type="radio" id="cat" name="animal">
+                <label for="cat">Cat</label>
+                <input type="radio" id="sheep" name="animal">
+                <label for="sheep">Sheep</label>
+                <input type="radio" id="giraffe" name="animal">
+                <label for="giraffe">Giraffe</label>
+                <input type="radio" id="nyancat" name="animal">
+                <label for="nyancat">GIMME Nyan Cat!</label>
+            </p>
+        </section>
+        <section class="coffee-form">
+            <p class="title">What do you want in your coffee?</p>
+            <p>
+                <input type="checkbox" id="milk" name="milk">
+                <label for="milk">Milk</label>
+                <input type="checkbox" id="creme" name="creme">
+                <label for="creme">Creme</label>
+                <input type="checkbox" id="sugar" name="sugar">
+                <label for="sugar">Sugar</label>
+                <input type="checkbox" id="honey" name="honey">
+                <label for="honey">Honey</label>
+                <input type="checkbox" id="tea" name="tea">
+                <label for="tea">I like Tea.</label>
+            </p>
+        </section>
+        <p class="submit-section">
+            <input type="submit" name="submitButton" value="Submit">
+            <button class="hide-nyancat" id="hide-nyancat" onclick="hideNyancat()">Stop Nyan Cat</button>
+        </p>
+    </form>
+    <p>BUMET CS601 Assignment 4 | Zuowen Tang</p>
+</main>
+</body>
+</html>
