@@ -1,5 +1,5 @@
 function getInfo(){
-    fetch("https://eldoov.github.io/CS601-fetch/info.json").then((response) => {
+    fetch("https://eldoov.github.io/BU-MET-CS601/CS601-fetch/info.json").then((response) => {
         if(response.ok){
             return response.json();
         }else {
