@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Show Earlier Picture</title>
+</head>
+<body>
+<main>
+    <div id="main-img">
+        <img :src="img1" alt="cat" @mouseenter="img1 = img2"/>
+    </div>
+    <script>
+        new Vue({
+            el: '#main-img',
+            data(){
+                return{
+                    img1: "media/img1.jpg",
+                    img2: "media/img2.jpg"
+                }
+            }
+        });
+    </script>
+</main>
+<footer>
+    <p>BUMET CS601 Assignment 5 | Zuowen Tang</p>
+</footer>
+</body>
+</html>
